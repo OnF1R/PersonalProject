@@ -12,5 +12,11 @@
     }
   }
 
-  
+  function ShowArray() {
+    $animal_1 = 'Кошка';
+    $animal_2 = 'Собака';
+    $animal_3 = 'Мышь';
+    $animal_array = $animal_1 . ' ' . $animal_2 . ' ' . $animal_3;
+    echo $animal_array;
+  }
  ?>
