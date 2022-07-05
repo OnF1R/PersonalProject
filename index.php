@@ -14,6 +14,8 @@
       SumIsInteger(5,2);
       echo "<br>";
       SumIsInteger(5,'fff');
+      echo "<br>";
+      ShowArray();
        ?>
     </div>
   </body>
