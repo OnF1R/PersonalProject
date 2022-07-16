@@ -12,13 +12,20 @@
     <div class="container">
       <h1><a href="UploadFileForm.php">Загрузить музыку</a></h1>
       <h1><a href="AudioPlayer.php">Плеер</a></h1>
-      <h3>Функция сложение простых чисел</h3>
+      <h1><a href="ReadFile.php">Чтение файлов</a></h1>
+      <h3>Математические функции</h3>
       <?php
         SumIsInteger(5,16); // Сумма двух целых чисел
         echo "<br>";
         SumIsInteger(); // Сумма двух целых чисел
         echo "<br>";
         SumIsInteger(5,'fff'); // Сумма двух целых чисел
+        echo "<br>";
+        echo 8 % 3 . " Остаток от деления <br>";
+        echo 8 / 3 . " Деление <br>";
+        echo round(8/3) . " Округление деления ( в большую сторону) <br>";
+        echo (int) (8 / 3) . " Целая часть при делении <br>";
+
       ?>
       <h3>Функция вывода массива</h3>
       <?php
@@ -32,7 +39,7 @@
         echo "<br>";
         CheckNumber(10); // Проверка числа
         echo "<br>";
-        CheckNumber(randomInt(100,500)); // Проверка числа
+        CheckNumber(randomInt()); // Проверка числа
         echo "<br>";
         CheckNumber(); // Проверка числа
       ?>
@@ -67,13 +74,22 @@
         echo 'Номер строки ' . __LINE__ . ' <br>';
 
        ?>
+      <h3>От единицы до числа</h3>
+      <?php
+        echo FromOneToNumber(0) ."<br>";
+        echo FromOneToNumber(randomInt());
+      ?>
       <h3>Другие функции</h3>
       <?php
-        CheckEmpty(123); // Проверка пустоты строки
+        echo CheckEmpty(123) . " Проверка пустоты строки";
         echo "<br>";
-        CheckType("true"); // Проверка типа переменной
+        echo CheckType("true") . " Проверка типа переменной";
         echo "<br>";
-        echo Rounded(21.41231231, 4);
+        echo Rounded(21.41231231, 2) . " Округление";
+        echo "<br>";
+        echo Calc(5,50,"*") . " Примитивный калькулятор";
+        echo "<br>";
+        echo FindSimpleNumber(11);
       ?>
     </div>
   </body>
